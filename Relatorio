@@ -1,0 +1,12 @@
+public interface Relatorio {
+    void gerar();
+}
+
+class RelatorioPDF implements Relatorio {
+    public void gerar() { System.out.println("pdf gerado."); }
+}
+
+class RelatorioCSV implements Relatorio {
+    public void gerar() { System.out.println("csv gerado."); }
+}
+
